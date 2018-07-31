@@ -134,9 +134,16 @@ h4{
   float: left;
 }
 
+<<<<<<< HEAD
+
+@keyframes anticlockwisespin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-360deg);}
+=======
 #tablePage{
   display: none;
   
+>>>>>>> upstream/master
 }
 
 @keyframes clockwisespin {
