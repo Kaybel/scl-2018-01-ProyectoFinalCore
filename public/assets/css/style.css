@@ -114,10 +114,8 @@ h4{
   margin-bottom: 5%;
   font-size: 150%;
 }
-.adminPage{
+#adminPage{
   margin-top: 30%;
-  display: none;
-  display: block;
   text-align: center;
 }
 #btnIndex{

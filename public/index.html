@@ -42,19 +42,14 @@
     <img id="imglogo" src="../public/assets/img/img002.png" alt="logo de if blanco">
     <p></p>
     <img id="gif" src="../public/assets/img/git.gif" alt="gif de carga" srcset="">
-    <!--
-    <div class="loader-container">
-      <div id="loader1" class="loader1"></div>
-      <div id="loader2" class="loader2"></div>
-    </div>
-     -->
   </section>
   <!--Administrador-->
-  <section class="adminPage">
+
+  <section id="adminPage">
     <img src="../public/assets/img/512x512bb.jpg" id="imagenARedondear" alt="imagen de if blanco" srcset="">
     <div>
-    <p id="choose">ESCOGE TU USUARIO</p>
-  </div>
+      <p id="choose">ESCOGE TU USUARIO</p>
+    </div>
     <div>
       <button type="button" onclick="showVisitorPage()" id="btnIndex" class="btn">CONSERJERÍA</button>
     </div>
@@ -62,7 +57,7 @@
     <div>
       <button type="button" onclick="showTablePage()" id="btnIndex" class="btn">ADMINISTRACIÓN</button>
     </div>
-  </section>
+</section>
   <!--Registro Page-->
 
   <section id="registroPage">
@@ -156,10 +151,19 @@
                       </div>
                       <div class="modal-body">
                         <strong>
-                          Información del Usuario. </strong> En el transcurso del tiempo que usted haga presencia en el if blanco y haga uso de los servicios puestos a su disposición en o a través del área, se le puede pedir que nos proporcione cierta información personalizada (dicha información en lo sucesivo "Información del Usuario"). Las políticas de uso y recopilación de información de Registrapp. con respecto a la privacidad de dicha Información del Usuario se establecen en la Política de Privacidad del Sitio, la cual está incorporada al mismo como referencia para todos los propósitos. Usted reconoce y acepta ser el único responsable de la exactitud del contenido de la Información del Usuario.
-                          <br>
-                          <strong>
-                          Conducta Prohibida del Usuario. </strong> Usted garantiza y está de acuerdo en que, mientras se encuentre dentro de las instalaciones del if blanco, usted no: (a) no desvirtuará su afiliación con alguna otra persona o entidad; (b) intentará ganar acceso no autorizado a otras áreas; (c) incumplira cualquier normativa preestablecida del if blanco.
+                          Información del Usuario. </strong> En el transcurso del tiempo que usted haga presencia en el if
+                        blanco y haga uso de los servicios puestos a su disposición en o a través del área, se le puede pedir
+                        que nos proporcione cierta información personalizada (dicha información en lo sucesivo "Información
+                        del Usuario"). Las políticas de uso y recopilación de información de Registrapp. con respecto a la
+                        privacidad de dicha Información del Usuario se establecen en la Política de Privacidad del Sitio,
+                        la cual está incorporada al mismo como referencia para todos los propósitos. Usted reconoce y acepta
+                        ser el único responsable de la exactitud del contenido de la Información del Usuario.
+                        <br>
+                        <strong>
+                          Conducta Prohibida del Usuario. </strong> Usted garantiza y está de acuerdo en que, mientras se
+                        encuentre dentro de las instalaciones del if blanco, usted no: (a) no desvirtuará su afiliación con
+                        alguna otra persona o entidad; (b) intentará ganar acceso no autorizado a otras áreas; (c) incumplira
+                        cualquier normativa preestablecida del if blanco.
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">He leido los terminos</button>
@@ -196,22 +200,22 @@
   </section>
   <!-- pagina administrador -->
   <section id="tablePage">
-    <div id="table" >
-        <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellido</th>
-                <th scope="col">Email</th>
-                <th scope="col">Rut</th>
-                <th scope="col">Patente</th>
-                <th scope="col">Motivo visita</th>
-                <th scope="col">Espacio a visitar</th>
-              </tr>
-            </thead>
-            <tbody id="tablaRegistro" >
-            </tbody>
-          </table>
+    <div id="table">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Email</th>
+            <th scope="col">Rut</th>
+            <th scope="col">Patente</th>
+            <th scope="col">Motivo visita</th>
+            <th scope="col">Espacio a visitar</th>
+          </tr>
+        </thead>
+        <tbody id="tablaRegistro">
+        </tbody>
+      </table>
     </div>
     <div>
       <button onclick="showAdminPage()" class="btnVolver" type="submit">Volver</button>

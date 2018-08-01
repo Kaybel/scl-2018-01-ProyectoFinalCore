@@ -21,7 +21,7 @@ function showAdminPage() {
   $('#adminPage').show();
 }
 function showTablePage() {
-  console.log('3');
+  console.log('4');
   $('#respuestaPage').hide();
   $('#registroPage').hide();
   $('#adminPage').hide();
