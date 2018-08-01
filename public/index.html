@@ -20,11 +20,11 @@
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyD9Mljc7zSuxCnR_6L15voA-5_0Olk0SBM",
-      authDomain: "proyecto-final-6656c.firebaseapp.com",
-      databaseURL: "https://proyecto-final-6656c.firebaseio.com",
-      projectId: "proyecto-final-6656c",
-      storageBucket: "proyecto-final-6656c.appspot.com",
-      messagingSenderId: "701488365879"
+    authDomain: "proyecto-final-6656c.firebaseapp.com",
+    databaseURL: "https://proyecto-final-6656c.firebaseio.com",
+    projectId: "proyecto-final-6656c",
+    storageBucket: "proyecto-final-6656c.appspot.com",
+    messagingSenderId: "701488365879"
     };
     firebase.initializeApp(config);
   </script>
@@ -174,7 +174,7 @@
             </div>
           </div>
           <div>
-            <button class="btnCenter" onclick="enviar()" type="submit">Enviar</button>
+            <button class="btnCenter" onclick="enviar();showResponsePage();" type="submit">Enviar</button>
           </div>
           <button onclick="showAdminPage()" id="backToInit" class="btnVolver" type="submit">Volver</button>
   </section>

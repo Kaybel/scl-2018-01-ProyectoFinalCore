@@ -1,10 +1,10 @@
 firebase.initializeApp({
-  apiKey: 'AIzaSyD9Mljc7zSuxCnR_6L15voA-5_0Olk0SBM',
-  authDomain: 'proyecto-final-6656c.firebaseapp.com',
-  databaseURL: 'https://proyecto-final-6656c.firebaseio.com',
-  projectId: 'proyecto-final-6656c',
-  storageBucket: 'proyecto-final-6656c.appspot.com',
-  messagingSenderId: '701488365879'
+  apiKey: "AIzaSyD9Mljc7zSuxCnR_6L15voA-5_0Olk0SBM",
+  authDomain: "proyecto-final-6656c.firebaseapp.com",
+  databaseURL: "https://proyecto-final-6656c.firebaseio.com",
+  projectId: "proyecto-final-6656c",
+  storageBucket: "proyecto-final-6656c.appspot.com",
+  messagingSenderId: "701488365879"
 });
 
 var db = firebase.firestore();
@@ -54,36 +54,27 @@ db.collection('registro').onSnapshot((querySnapshot) => {
   querySnapshot.forEach((doc) => {
     console.log(`${doc.id} => ${doc.data().name}`);
     card.innerHTML += `
-      <div class="card">
-        <img class="card-img-top" src="${doc.data().img}"text=Image cap" alt="Card image cap">
-        <h5 class="card-title">${doc.data().title}</h5>
-        <p class="card-text">${doc.data().text}</p>
-        <i class="fas fa-heart" id="hola" onclick="like()" ></i><span id="contador"></span>
-        <i class="fas fa-trash-alt" onclick="eliminar('${doc.id}')"></i>
-        <i class="fas fa-pencil-alt" onclick="editar('${doc.id}', '${doc.data().title}', '${doc.data().text}')"></i>
-        
-        <section class="center">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <button type="submit" class="btn" id="btncomentario" onclick="comentar()">
-                <i class="fas fa-plus" aria-hidden="true"></i> Comentar</button>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12" id="cont"></div>
-            </div>
-          </div>
-        </section>
-      </div>
-      `;
+    <tr>
+    <td>${doc.data().name}</td>
+    <td>${doc.data().lastName}</td>
+    <td>${doc.data().email}</td>
+    <td>${doc.data().rut}</td>
+    <td>${doc.data().telefono}</td>
+    <td>${doc.data().patente}</td>
+    <td>${doc.data().motivo}</td>
+    <td>${doc.data().espacio}</td>
+    </tr>
+      `
   });
 });
+
+function showResponsePage() {
+  console.log('2');
+  $('#respuestaPage').show();
+  $('#registroPage').hide();
+  $('#tablePage').hide();
+  $('#adminPage').hide();
+}
 
 const preload = document.getElementById('preload');
 setTimeout(() => {
