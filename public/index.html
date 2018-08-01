@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <!--Mi CSS-->
+  <link rel="icon" type="image/png" sizes="16x16" href="../public/assets/img/512x512bb.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
@@ -29,7 +30,7 @@
   </script>
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
-  <title>Proyecto Final</title>
+  <title>Registrapp</title>
 </head>
 
 <body>
@@ -38,9 +39,9 @@
     <div>
       <img id="registrapp" src="../assets/img/logo.png" alt="Logo Registrapp">
     </div>
-    <img id="imglogo" src="../assets/img/img002.png" alt="logo de if blanco">
+    <img id="imglogo" src="../public/assets/img/img002.png" alt="logo de if blanco">
     <p></p>
-    <img id="gif" src="../assets/img/git.gif" alt="gif de carga" srcset="">
+    <img id="gif" src="../public/assets/img/git.gif" alt="gif de carga" srcset="">
     <!--
     <div class="loader-container">
       <div id="loader1" class="loader1"></div>
@@ -50,11 +51,16 @@
   </section>
   <!--Administrador-->
   <section class="adminPage">
+    <img src="../public/assets/img/512x512bb.jpg" id="imagenARedondear" alt="imagen de if blanco" srcset="">
     <div>
-      <button type="button" onclick="showVisitorPage()" class="btn">CONSERJERÍA</button>
+    <p id="choose">ESCOGE TU USUARIO</p>
+  </div>
+    <div>
+      <button type="button" onclick="showVisitorPage()" id="btnIndex" class="btn">CONSERJERÍA</button>
     </div>
+    <br>
     <div>
-      <button type="button" onclick="showTablePage()" class="btn">ADMINISTRACIÓN</button>
+      <button type="button" onclick="showTablePage()" id="btnIndex" class="btn">ADMINISTRACIÓN</button>
     </div>
   </section>
   <!--Registro Page-->
@@ -82,6 +88,10 @@
                 </div>
                 <input type="text" class="form-control" id="validationCustomUsername" placeholder="Ingresa acá tu e-mail" aria-describedby="inputGroupPrepend">
               </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom02">Telefono</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa acá tu número telefónico">
             </div>
           </div>
           <div class="form-row">
@@ -145,7 +155,11 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                        ...
+                        <strong>
+                          Información del Usuario. </strong> En el transcurso del tiempo que usted haga presencia en el if blanco y haga uso de los servicios puestos a su disposición en o a través del área, se le puede pedir que nos proporcione cierta información personalizada (dicha información en lo sucesivo "Información del Usuario"). Las políticas de uso y recopilación de información de Registrapp. con respecto a la privacidad de dicha Información del Usuario se establecen en la Política de Privacidad del Sitio, la cual está incorporada al mismo como referencia para todos los propósitos. Usted reconoce y acepta ser el único responsable de la exactitud del contenido de la Información del Usuario.
+                          <br>
+                          <strong>
+                          Conducta Prohibida del Usuario. </strong> Usted garantiza y está de acuerdo en que, mientras se encuentre dentro de las instalaciones del if blanco, usted no: (a) no desvirtuará su afiliación con alguna otra persona o entidad; (b) intentará ganar acceso no autorizado a otras áreas; (c) incumplira cualquier normativa preestablecida del if blanco.
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">He leido los terminos</button>
@@ -212,8 +226,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <!--Links JS-->
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="../public/assets/js/app.js"></script>
+  <script src="../public/assets/js/main.js"></script>
 </body>
 
 </html>
