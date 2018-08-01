@@ -88,7 +88,8 @@ setTimeout(() => {
   preload.style.display = 'none';
 }, 3000);
 
-// camera
+// camera 
+/*
 navigator.webcam = (
   navigator.msGetUserMedia ||
   navigator.mozGetUserMedia ||
@@ -107,4 +108,4 @@ function error() {
 navigator.webcam({
   video: true,
   audio: false
-}, success, error);
+}, success, error); */

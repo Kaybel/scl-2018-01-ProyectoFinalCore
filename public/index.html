@@ -38,9 +38,9 @@
     <div>
       <img id="registrapp" src="../assets/img/logo.png" alt="Logo Registrapp">
     </div>
-    <img id="imglogo" src="../assets/img/img002.png" alt="logo de if blanco">
+    <img id="imglogo" src="../public/assets/img/img002.png" alt="logo de if blanco">
     <p></p>
-    <img id="gif" src="../assets/img/git.gif" alt="gif de carga" srcset="">
+    <img id="gif" src="../public/assets/img/git.gif" alt="gif de carga" srcset="">
     <!--
     <div class="loader-container">
       <div id="loader1" class="loader1"></div>
@@ -50,11 +50,16 @@
   </section>
   <!--Administrador-->
   <section class="adminPage">
+    <img src="../public/assets/img/512x512bb.jpg" id="imagenARedondear" alt="imagen de if blanco" srcset="">
     <div>
-      <button type="button" onclick="showVisitorPage()" class="btn">CONSERJERÍA</button>
+    <p id="choose">ESCOGE TU USUARIO</p>
+  </div>
+    <div>
+      <button type="button" onclick="showVisitorPage()" id="btnIndex" class="btn">CONSERJERÍA</button>
     </div>
+    <br>
     <div>
-      <button type="button" onclick="showTablePage()" class="btn">ADMINISTRACIÓN</button>
+      <button type="button" onclick="showTablePage()" id="btnIndex" class="btn">ADMINISTRACIÓN</button>
     </div>
   </section>
   <!--Registro Page-->
@@ -82,6 +87,10 @@
                 </div>
                 <input type="text" class="form-control" id="validationCustomUsername" placeholder="Ingresa acá tu e-mail" aria-describedby="inputGroupPrepend">
               </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom02">Telefono</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa acá tu número telefónico">
             </div>
           </div>
           <div class="form-row">

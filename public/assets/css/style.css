@@ -100,10 +100,24 @@ h4{
 #registroPage{
   display: none;
 }
+#imagenARedondear{
+  border-radius: 25%;
+  margin: 5%;
+  width: 200px;
+  height: 200px;
+}
+#choose{
+  margin-bottom: 5%;
+}
 .adminPage{
-  margin: 20%;
+  margin-top: 30%;
   display: none;
   display: block;
+  text-align: center;
+}
+#btnIndex{
+  background-color: #000000;
+  color: #FFFFFF;
 }
 h4{
   margin-left: 30%;
@@ -134,25 +148,21 @@ h4{
   float: left;
 }
 
-<<<<<<< HEAD
 
 @keyframes anticlockwisespin {
   from {transform: rotate(0deg);}
   to {transform: rotate(-360deg);}
-=======
-#tablePage{
-  display: none;
-  
->>>>>>> upstream/master
 }
 
 @keyframes clockwisespin {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
 }
-
-#video{
+#tablePage{
+  display: none;
+}
+/* #video{
   background-color: black;
   height: 100vh;
   width: 100vw;
-}
+} */
