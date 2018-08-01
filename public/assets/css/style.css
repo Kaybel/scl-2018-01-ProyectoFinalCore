@@ -111,6 +111,7 @@ h4{
 }
 #choose{
   margin-bottom: 5%;
+  font-size: 150%;
 }
 .adminPage{
   margin-top: 30%;
@@ -121,6 +122,9 @@ h4{
 #btnIndex{
   background-color: #000000;
   color: #FFFFFF;
+  width: 80%;
+  height: 60%;
+  font-size: 200%
 }
 h4{
   margin-left: 30%;
