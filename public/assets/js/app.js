@@ -9,6 +9,11 @@ firebase.initializeApp({
 
 var db = firebase.firestore();
 
+function myFunction(){
+  enviar();
+  showResponsePage();
+}
+
 function enviar() {
   const nombreVisita = document.getElementById('validationCustom01').value;
   document.getElementById('validationCustom01').value = '';
@@ -81,6 +86,14 @@ db.collection('registro').onSnapshot((querySnapshot) => {
       `;
   });
 });
+
+function showResponsePage() {
+  console.log('2');
+  $('#respuestaPage').show();
+  $('#registroPage').hide();
+  $('#tablePage').hide();
+  $('#adminPage').hide();
+}
 
 const preload = document.getElementById('preload');
 setTimeout(() => {

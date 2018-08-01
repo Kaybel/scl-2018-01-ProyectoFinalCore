@@ -1,6 +1,5 @@
 // pages changes
 function showVisitorPage() {
-  console.log('1');
   $('#respuestaPage').hide();
   $('#registroPage').show();
   $('#adminPage').hide();
