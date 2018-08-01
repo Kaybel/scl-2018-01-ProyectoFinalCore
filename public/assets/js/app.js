@@ -26,8 +26,8 @@ function enviar() {
   document.getElementById('inlineFormCustomSelectPref2').value = '';
   const check = document.getElementById('invalidCheck').value;
   document.getElementById('invalidCheck').value = '';
-  const telefonoVisita = document.getElementById('validationCustom0001').value;
-  document.getElementById('validationCustom0001').value = '';
+  const telefonoVisita = document.getElementById('validationCustom0005').value;
+  document.getElementById('validationCustom0005').value = '';
 
   db.collection('registro').add({
     name: nombreVisita,
