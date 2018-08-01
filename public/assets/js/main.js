@@ -27,3 +27,9 @@ function showTablePage() {
   $('#adminPage').hide();
   $('#tablePage').show();
 }
+  const adminPage = document.getElementsByClassName('adminPage');
+function btns() {
+  if (showAdminPage === true){
+    adminPage.add
+  }
+}
