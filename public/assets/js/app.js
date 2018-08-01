@@ -24,8 +24,10 @@ function enviar() {
   document.getElementById('inlineFormCustomSelectPref').value = '';
   const espacioVisita = document.getElementById('inlineFormCustomSelectPref2').value;
   document.getElementById('inlineFormCustomSelectPref2').value = '';
-  const check = document.getElementById('iinvalidCheck').value;
+  const check = document.getElementById('invalidCheck').value;
   document.getElementById('invalidCheck').value = '';
+  const telefonoVisita = document.getElementById('validationCustom0001').value;
+  document.getElementById('validationCustom0001').value = '';
 
   db.collection('registro').add({
     name: nombreVisita,
@@ -35,6 +37,7 @@ function enviar() {
     patente: patenteVisita,
     motivo: motivoVisita,
     espacio: espacioVisita,
+    telefono: telefonoVisita,
   })
     .then(function(docRef) {
       console.log('Document written with ID: ', docRef.id);
