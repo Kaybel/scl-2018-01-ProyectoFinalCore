@@ -52,7 +52,7 @@ let card = document.getElementById('cardPublicacion');
 db.collection('registro').onSnapshot((querySnapshot) => {
   card.innerHTML = '';
   querySnapshot.forEach((doc) => {
-    console.log(`${doc.id} => ${doc.data().img}`);
+    console.log(`${doc.id} => ${doc.data().name}`);
     card.innerHTML += `
       <div class="card">
         <img class="card-img-top" src="${doc.data().img}"text=Image cap" alt="Card image cap">
