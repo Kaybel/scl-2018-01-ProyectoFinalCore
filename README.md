@@ -3,7 +3,8 @@
 El registro de visitantes en una empresa en América Latina es un proceso tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Si vivimos en la era digital, ¿por qué seguimos registrando visitantes como si fuera 1985? ¿Qué tal si sustituimos a la persona en recepción por una tablet? ¿Qué tal si en lugar de pedir una identificación, tomamos una foto? 
 
 ## Introducción
-En este proyecto la empresa de coworking nos ha solicitado diseñar una app que ayude a conserjes a tener un desarrollo más fluido de registro y de administración de datos.
+En este proyecto la empresa de coworking nos ha solicitado diseñar una app que ayude a conserjes a tener un desarrollo más fluido de registro y de administración la cual se desplega en la siguiente pagina https://proyecto-final-6656c.firebaseapp.com/
+
 
 ## Usuarios y objetivos:
 
